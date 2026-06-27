@@ -1,0 +1,116 @@
+/* Centered eco-green login page */
+body.center-login {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #2c7a7b, #38b2ac);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Login card box */
+.login-card {
+  background: #ffffff;
+  width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  padding: 40px 35px;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+/* Header part with image */
+.login-header img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.login-header h2 {
+  color: #2c7a7b;
+  margin: 10px 0 5px;
+}
+
+.login-header p {
+  color: #4a5568;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* Form styles */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.login-form label {
+  text-align: left;
+  color: #2d3748;
+  font-weight: 500;
+  margin: 10px 0 5px;
+}
+
+.login-form input {
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #319795;
+  box-shadow: 0 0 6px rgba(56, 178, 172, 0.5);
+}
+
+.login-form button {
+  margin-top: 25px;
+  padding: 14px;
+  font-size: 17px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2c7a7b;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #285e61;
+  transform: scale(1.02);
+}
+
+/* Register link */
+.register-link {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #4a5568;
+}
+
+.register-link a {
+  color: #2c7a7b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Simple fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-card {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}
